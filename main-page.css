@@ -1,0 +1,43 @@
+p {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding-bottom: 1000px;
+  background-color: rgba(2, 13, 29, 1);
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url(fonts/metropolis/Metropolis-Black.otf) format('otf');
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url(fonts/metropolis/Metropolis-Bold.otf) format('otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url(fonts/metropolis/Metropolis-Regular.otf) format('otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url(fonts/metropolis/Metropolis-SemiBold.otf) format('otf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url(fonts/metropolis/Metropolis-Thin.otf) format('otf');
+  font-weight: lighter;
+}
+
+.main-page {
+  display: flex;
+}
