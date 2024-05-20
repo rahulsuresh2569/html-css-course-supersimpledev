@@ -1,0 +1,111 @@
+
+.navigation-bar {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background: linear-gradient(180deg, #64ECBB 60.81%, #17B385 99.13%);
+}
+
+.sidebar-main-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.hamburger-menu {
+  margin-top: 15px;
+  height: 20px;
+  margin-left: 10px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.user-info-div {
+  display: flex;
+  margin: 15px 10px 5px 10px;
+  padding: 14px 15px;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1)
+}
+
+.user-pic {
+  width: 60px;
+  border-radius: 35px;
+}
+
+.user-info-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.user-name {
+  font-family: Josefin Sans;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.user-type {
+  font-family: Josefin Sans;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.options-div {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.option-element {
+  height: 40px;
+  font-size: 14px;
+  display: flex;
+  padding-left: 25px;
+  justify-content: start;
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transition: background-color 0.25s, color 0.25s;
+}
+.option-element:hover,
+.user-option:hover {
+  background-color: rgba(23, 179, 133, 1);
+  cursor: pointer;
+}
+.option-element:active,
+.user-option:active{
+  color: white;
+  background-color: rgba(0, 125, 84, 1);
+}
+.option-image {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.option-name {
+  font-family: 'Metropolis';
+}
+
+.user-options-div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: end;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.user-option {
+  padding-left: 25px;
+  margin-bottom: 10px;
+  transition: background-color 0.25s, color 0.25s;
+}
