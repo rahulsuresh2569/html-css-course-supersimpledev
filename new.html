@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>File Upload</title>
+
+
+
+  </head>
+
+  <body>
+
+    <input type="file" id="photo">
+    <img id="image">
+    <button onclick="uploadImage()">Upload</button>
+
+
+      <script type="module" src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+      <script type="module" src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js"></script>
+
+      
+      <script type="module">
+        const firebaseConfig = {
+        apiKey: "AIzaSyCx6Tjo20nTSQ2bleIbUQ6pg_jn2j3J5So",
+        authDomain: "formdemodrift.firebaseapp.com",
+        databaseURL: "https://formdemodrift-default-rtdb.firebaseio.com",
+        projectId: "formdemodrift",
+        storageBucket: "formdemodrift.appspot.com",
+        messagingSenderId: "743748336039",
+        appId: "1:743748336039:web:bb8e561b92f7d5cd1b9e82"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      function uploadImage(){
+        console.log ("hi")
+        const ref = firebase.storage().ref()
+
+        const file = document.querySelector("#photo").files[0]
+
+        const name = new Date() + '-' + file.name
+
+        const metadata = {
+          contentType:file.type
+        }
+
+        const task = ref.child(name).put(file,metadata)
+
+        task
+        .then(snapshot => snapshot.ref.getDownloadURL())
+        .then(url => {
+          console.log(url)
+          alert("Image Uploaded")
+          const image = document.querySelector('#image')
+          image.src = url
+        })
+
+      }
+      </script>
+    
+
+  </body>
+
+  
+</html>
