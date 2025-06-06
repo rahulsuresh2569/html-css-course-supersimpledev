@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Flexy
+    </title>
+
+    <style>
+    
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flex-grid {
+      width: 300px;
+      padding: 10px;
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      box-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.7);
+    }
+
+    button {
+      padding-left: 12px;
+      padding-right: 12px;
+      font-weight: bold;
+      font-size: 15px;
+      vertical-align: middle;
+      color: white;
+      border-style: none;
+      padding-top: 4px;
+      padding-bottom:4px;
+      border-radius: 20px;
+      background-color: rgb(0, 97, 208);
+      cursor: pointer;       
+    }
+
+    .element-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    
+    <div class="flex-grid">
+
+      <div class="element-flex">
+      
+        <div class="info">
+          <p class="text">
+            Home
+          </p>
+        </div>
+
+        <div class="message">
+          <button>
+            14
+          </button>
+        </div>
+        
+      </div>
+
+      <div class="element-flex">
+      
+        <div class="info">
+          <p class="text">
+            Notifications
+          </p>
+        </div>
+
+        <div class="message">
+          <button>
+            3
+          </button>
+        </div>
+        
+      </div>
+
+      <div class="element-flex">
+      
+        <div class="info">
+          <p class="text">
+            Messages
+          </p>
+        </div>
+
+        <div class="message">
+          <button>
+            5
+          </button>
+        </div>
+        
+      </div>
+
+      
+
+    </div>
+
+  </body>
+
+
+</html>
